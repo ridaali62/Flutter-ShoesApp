@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:shoesapp/cart/cart_provider.dart';
 
 import '../../widgets/myapp_clr.dart';
 import '../../widgets/mycard.dart';

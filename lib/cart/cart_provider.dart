@@ -1,7 +1,6 @@
 import 'package:flutter/widgets.dart';
 
 import '../widgets/myapp_clr.dart';
-import 'package:provider/provider.dart';
 
 class cart {
   List<dynamic> cartproduct;

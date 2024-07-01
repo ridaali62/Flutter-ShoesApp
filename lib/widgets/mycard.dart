@@ -1,18 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:shoesapp/cart/cart_provider.dart';
-import 'package:shoesapp/screens/Screen1.dart';
-import 'package:shoesapp/screens/Splashscreeen3.dart';
-import 'package:shoesapp/screens/Splashscreen.dart';
-import 'package:shoesapp/screens/Splashscreen2.dart';
-import 'package:shoesapp/screens/Splashscreen4.dart';
 import 'package:shoesapp/widgets/descripcard.dart';
 import 'package:shoesapp/widgets/mytext.dart';
-import 'package:shoesapp/widgets/myapp_clr.dart' as main;
-import 'package:shoesapp/widgets/viewcard.dart';
 
 import 'myapp_clr.dart';
 
+// ignore: camel_case_types, must_be_immutable
 class mycard extends StatefulWidget {
   mycard(
       {super.key,
@@ -36,90 +29,90 @@ class mycard extends StatefulWidget {
 class _mycardState extends State<mycard> {
   List pages = [
     descripcard(
-      imag1: "assets/airmax1.png",
-      imag2: "assets/airmax1.2.png",
-      imag3: "assets/airmax1.3.png",
+      image1: "assets/airmax1.png",
+      image2: "assets/airmax1.2.png",
+      image3: "assets/airmax1.3.png",
       price: Product[0][2],
       text: Product[0][1],
       maintext: "Airmax",
       position: 0,
     ),
     descripcard(
-      imag1: "assets/Mercurialvapor1.png",
-      imag2: "assets/Mercurialvapor2.png",
-      imag3: "assets/Mercurialvapor3.png",
+      image1: "assets/Mercurialvapor1.png",
+      image2: "assets/Mercurialvapor2.png",
+      image3: "assets/Mercurialvapor3.png",
       price: Product[1][2],
       text: Product[1][1],
       maintext: "Air Force 1",
       position: 1,
     ),
     descripcard(
-      imag1: "assets/Mercurialvapor1.png",
-      imag2: "assets/Mercurialvapor2.png",
-      imag3: "assets/Mercurialvapor3.png",
+      image1: "assets/Mercurialvapor1.png",
+      image2: "assets/Mercurialvapor2.png",
+      image3: "assets/Mercurialvapor3.png",
       price: Product[2][2],
       text: Product[2][1],
       maintext: "Air Force 1",
       position: 2,
     ),
     descripcard(
-      imag1: "assets/Mercurialvapor1.png",
-      imag2: "assets/Mercurialvapor2.png",
-      imag3: "assets/Mercurialvapor3.png",
+      image1: "assets/Mercurialvapor1.png",
+      image2: "assets/Mercurialvapor2.png",
+      image3: "assets/Mercurialvapor3.png",
       price: Product[3][2],
       text: Product[3][1],
       maintext: "Air Force 1",
       position: 3,
     ),
     descripcard(
-      imag1: "assets/Mercurialvapor1.png",
-      imag2: "assets/Mercurialvapor2.png",
-      imag3: "assets/Mercurialvapor3.png",
+      image1: "assets/Mercurialvapor1.png",
+      image2: "assets/Mercurialvapor2.png",
+      image3: "assets/Mercurialvapor3.png",
       price: Product[4][2],
       text: Product[4][1],
       maintext: "Air Force 1",
       position: 4,
     ),
     descripcard(
-      imag1: "assets/Mercurialvapor1.png",
-      imag2: "assets/Mercurialvapor2.png",
-      imag3: "assets/Mercurialvapor3.png",
+      image1: "assets/Mercurialvapor1.png",
+      image2: "assets/Mercurialvapor2.png",
+      image3: "assets/Mercurialvapor3.png",
       price: Product[5][2],
       text: Product[5][1],
       maintext: "Air Force 1",
       position: 5,
     ),
     descripcard(
-      imag1: "assets/Mercurialvapor1.png",
-      imag2: "assets/Mercurialvapor2.png",
-      imag3: "assets/Mercurialvapor3.png",
+      image1: "assets/Mercurialvapor1.png",
+      image2: "assets/Mercurialvapor2.png",
+      image3: "assets/Mercurialvapor3.png",
       price: Product[6][2],
       text: Product[6][1],
       maintext: "Air Force 1",
       position: 6,
     ),
     descripcard(
-      imag1: "assets/Mercurialvapor1.png",
-      imag2: "assets/Mercurialvapor2.png",
-      imag3: "assets/Mercurialvapor3.png",
+      image1: "assets/Mercurialvapor1.png",
+      image2: "assets/Mercurialvapor2.png",
+      image3: "assets/Mercurialvapor3.png",
       price: Product[7][2],
       text: Product[7][1],
       maintext: "Air Force 1",
       position: 7,
     ),
     descripcard(
-      imag1: "assets/Mercurialvapor1.png",
-      imag2: "assets/Mercurialvapor2.png",
-      imag3: "assets/Mercurialvapor3.png",
+      image1: "assets/Mercurialvapor1.png",
+      image2: "assets/Mercurialvapor2.png",
+      image3: "assets/Mercurialvapor3.png",
       price: Product[8][2],
       text: Product[8][1],
       maintext: "Air Force 1",
       position: 8,
     ),
     descripcard(
-      imag1: "assets/Mercurialvapor1.png",
-      imag2: "assets/Mercurialvapor2.png",
-      imag3: "assets/Mercurialvapor3.png",
+      image1: "assets/Mercurialvapor1.png",
+      image2: "assets/Mercurialvapor2.png",
+      image3: "assets/Mercurialvapor3.png",
       price: Product[9][2],
       text: Product[9][1],
       maintext: "Air Force 1",

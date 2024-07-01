@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shoesapp/cart/cart_screen.dart';
+import 'package:shoesapp/save/save_screen.dart';
 import 'package:shoesapp/screens/home_screen.dart';
 import 'package:shoesapp/widgets/myapp_clr.dart';
-import 'package:shoesapp/widgets/mytext.dart';
 import 'package:shoesapp/cart/cart_provider.dart';
 
 class HomePage extends StatefulWidget {
@@ -14,7 +14,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  @override
   int selectedindex = 0;
   void selectedvalue(int index) {
     setState(() {
@@ -23,9 +22,9 @@ class _HomePageState extends State<HomePage> {
   }
 
   final List _pages = [
-    Center(child: MyText(text: "Rida Ali")),
+    const SaveScreen(),
     const HomeScreen(),
-    CartScreen(),
+    const CartScreen(),
   ];
   @override
   Widget build(BuildContext context) {

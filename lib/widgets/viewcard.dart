@@ -3,6 +3,7 @@ import 'package:shoesapp/widgets/descripcard.dart';
 import 'package:shoesapp/widgets/myapp_clr.dart';
 import 'package:shoesapp/widgets/mytext.dart';
 
+// ignore: camel_case_types, must_be_immutable
 class viewcard extends StatefulWidget {
   viewcard({super.key, required this.imag});
   String imag;
@@ -108,9 +109,9 @@ class _viewcardState extends State<viewcard> {
                               context,
                               MaterialPageRoute(
                                 builder: (context) => descripcard(
-                                  imag1: "assets/dynamic1.png",
-                                  imag2: "assets/dynamic2.png",
-                                  imag3: "assets/dynamic3.png",
+                                  image1: "assets/dynamic1.png",
+                                  image2: "assets/dynamic2.png",
+                                  image3: "assets/dynamic3.png",
                                   price: '60',
                                   position: 2,
                                 ),

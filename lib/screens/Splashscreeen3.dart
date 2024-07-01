@@ -1,5 +1,5 @@
+// ignore_for_file: file_names
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:shoesapp/screens/Splashscreen4.dart';
 import 'package:shoesapp/widgets/myapp_clr.dart';
@@ -16,12 +16,11 @@ class Splashscreen3 extends StatefulWidget {
 class _Splashscreen3State extends State<Splashscreen3> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     Timer(
         const Duration(seconds: 2),
-        () => Navigator.push(
-            context, MaterialPageRoute(builder: (context) => const Splashscreen4())));
+        () => Navigator.push(context,
+            MaterialPageRoute(builder: (context) => const Splashscreen4())));
   }
 
   @override
