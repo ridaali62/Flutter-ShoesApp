@@ -1,16 +1,32 @@
-# shoesapp
+# Shoes App (Flutter)
 
-A new Flutter project.
+A shoe-shop mobile app built with Flutter: onboarding splash screens, a product grid, product details, a cart and a saved-items list.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Onboarding with page indicator (`smooth_page_indicator`)
+- Product grid and product detail cards
+- **Cart:** add and remove items, change quantity, total price, item-count badge (`badges`)
+- **Saved items** list
+- Custom typography with Google Fonts (Rubik)
 
-A few resources to get you started if this is your first Flutter project:
+## State management
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Two `ChangeNotifier` classes registered with `MultiProvider` in `main.dart`:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- `CartProvider` holds the cart items, quantities and the total price
+- `SaveProvider` holds the saved items
+
+Widgets rebuild through `notifyListeners()` when the cart or saved list changes.
+
+## Run
+
+```
+flutter pub get
+flutter run
+```
+
+## Next steps
+
+- Persist the cart with SQLite: `lib/cart/db_helper.dart` (sqflite) is prepared but not wired in yet
+- Replace the hard-coded product list with an API
